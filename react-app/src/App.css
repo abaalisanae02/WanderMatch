@@ -1,0 +1,193 @@
+/* General container styling */
+.landing-container {
+  position: relative; /* Allow absolute positioning of child elements */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Background GIF styling */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./asserts/travel-background.gif'); /* Correct path to GIF */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Make sure it's behind all other content */
+}
+
+/* Header styling */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  z-index: 1; /* Ensure navbar is on top */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+}
+
+
+.logo {
+  width: 300px; /* Adjust the logo size */
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 50px;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 136, 0, 0.7); /* Highlight effect */
+  border-radius: 15px;
+}
+
+/* Content styling */
+.content {
+  z-index: 1; /* Ensure the content appears above the background */
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #ff8800; /* Highlight color */
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background-color: #ff8800;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e07600;
+}
+
+/* Ensure the page takes up full height and has a responsive design */
+.questionnaire-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+/* Questionnaire Container */
+.questionnaire-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px;
+  flex: 1;
+}
+
+/* Left Side: Questions */
+.question-box {
+  width: 60%;
+  padding-left: 20px; /* Add padding on the left to move the content right */
+
+}
+
+.question {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.choices {
+  margin-bottom: 20px;
+}
+
+.choice-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.choice-input {
+  margin-right: 10px;
+}
+
+.next-button {
+  background-color: #ff8800;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #e07600;
+}
+
+.cta-button {
+  background-color: #e07600;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Right Side: Image */
+.image-container {
+  width: 35%;
+}
+
+.question-image {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+}
